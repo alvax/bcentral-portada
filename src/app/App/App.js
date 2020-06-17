@@ -1,12 +1,12 @@
 import React from "react";
 /* import logo from '../../assets/logo.svg'; */
-import "./App.css";
-import "../../assets/css/bcentral.css";
 /* import '../../assets/css/main.css'; */
-import "../../assets/css/responsive.css";
 /* import '../../assets/js/bcentral.js'; */
 /* import '../../assets/js/theme.js'; */
 /* import '../../assets/js/bcentral.js'; */
+import "./App.css";
+import "../../assets/css/bcentral.css";
+import "../../assets/css/responsive.css";
 import SideBar from "./components/sidebar";
 import Footer from "./components/footer";
 import Header from "./components/header";
@@ -24,9 +24,10 @@ function App() {
 
       {/* <!-- BANNER --> */}
       <div id="banner">
-        <div id="slider" className="only-desktop">
-          <div className="container"></div>
-          <Banner />
+        <div id="slider" className="">
+          <div className="container">
+            <Banner />
+          </div>
         </div>
       </div>
 
@@ -40,7 +41,7 @@ function App() {
       {/* SIDEBAR */}
       <div className="container">
         <div id="midblock">
-          <div id="sidebar-left" className="home only-desktop">
+          <div id="sidebar-left" className="home">
             <SideBar />
           </div>
 

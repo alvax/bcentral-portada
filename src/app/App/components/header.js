@@ -1,5 +1,14 @@
 import React from "react";
 
+function myFunction() {
+  var x = document.getElementById("sidebar-left");
+  if (x.style.display === "none" || x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 function Header() {
   return (
     <div
@@ -10,9 +19,10 @@ function Header() {
       <div className="container">
         <div className="navbar-header">
           <button
-            data-toggle="offcanvas"
+            data-toggle="home"
             className="navbar-toggle"
             type="button"
+            onClick={myFunction}
           >
             <span className="sr-only">Cambiar navegaci&oacute;n</span>
             <span className="icon-bar"></span>
@@ -34,37 +44,16 @@ function Header() {
               <div className="banco">Banco Central de Chile</div>
             </div>
           </div>
-          <div className="navbar-header pull-right visible-xs hidden-sm hidden-md hidden-lg">
-            <ul className="nav nav-pills pull-left ">
-              <li>
-                <form
-                  method="get"
-                  action="/xmlui/login" /* style={{display: inline}} */
-                >
-                  <button className="navbar-toggle navbar-link">
-                    <b
-                      aria-hidden="true"
-                      className="visible-xs glyphicon glyphicon-user"
-                    ></b>
-                  </button>
-                </form>
-              </li>
-            </ul>
-          </div>
         </div>
         <div className="navbar-header pull-right hidden-xs" id="topbar">
+          {/* <ul id="languageSelection" class="nav navbar-nav pull-left">
+            <li><a href="/?locale-attribute=es_ES" title="Ver en español (España)"><div className="flag es_ES"></div></a></li>
+            <li><a href="/?locale-attribute=en" title="See on english"><div className="flag en"></div></a></li>
+          </ul> */}
           <ul id="menu-principal">
-            <li>
-              <a href="https://repositoriodigital.bcentral.cl">Repositorio</a>
-            </li>
-            <li>
-              <a href="https://www.bcentral.cl/web/banco-central/inicio">
-                Banco Central
-              </a>
-            </li>
-            <li>
-              <a href="https://www.bcentral.cl/contacto">Contacto</a>
-            </li>
+            <li><a href="https://repositoriodigital.bcentral.cl">Repositorio</a></li>
+            <li><a href="https://www.bcentral.cl/web/banco-central/inicio">Banco Central</a></li>
+            <li><a href="https://www.bcentral.cl/contacto">Contacto</a></li>
             {/* <li><a href="/?locale-attribute=en" title="Ver en inglés"><div className="flag en"></div></a></li>
                 <li><a href="/?locale-attribute=es_ES" title="Ver en español"><div className="flag es_ES"></div></a></li> */}
           </ul>

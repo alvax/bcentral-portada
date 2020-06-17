@@ -67,10 +67,10 @@
 		font-size: 16px;
 	}
 	header .navbar-brand img.logo {
-		height: 70px;
+		height: 50px;
 	}
 	#buscador {
-		padding: 20px 30px 30px;
+		padding: 40px 30px 30px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -89,22 +89,77 @@
 		width: 100%;
 	}
 	#record .right {
-		display: none;
+		/*display: none;*/
 	}
 	/* PORTADA */
 	ul.nav.nav-pills.pull-left {
-		display: none;
+		/*display: none;*/
 	}
 	#banner {
 		height: 350px;
 	}
 	#midcontent {
-		padding: 20px;
+		padding: 20px 0px;
 	}
 	.documento {
 		padding: 10px;
 	}
 	.documento .informacion {
 		margin-left: 0;
+	}
+	/* SLIDER */
+	#slider {}
+	#title {
+		margin-left: 10px;
+    	text-align: left;
+	}
+	.navbar-toggle {
+		margin-top: 15px;
+	}
+	/* FOOTER */
+	#footer {
+		flex-direction: column;
+    	align-items: flex-end;
+	}
+	#footer .left .logo {
+		width: 100px;
+		margin-top: 10px;
+	}
+	#footer .right {
+		padding-bottom: 20px;
+	}
+	.rrss .link {
+		width: 38px;
+		height: 38px;
+		margin-left: 20px;
+	}
+	/* COLECCIONES */
+	.coleccion {
+		width: 150px;
+	}
+	/* SIDEBAR */
+	#sidebar-left {
+		display: none;
+	}
+	#sidebar-left.home {
+		position: absolute;
+		top: 90px;
+		right: 0;
+		z-index: 9;
+		padding: 0px 30px 30px;
+		width: 250px;	
+		background-color: var(--azul_oscuro);
+		
+	}
+	.seccion.home {
+		padding-bottom: 0;
+	}
+	.seccion .titulo,
+	.seccion .listado li a {
+		color: white;
+	}
+	.seccion ul.listado {
+		padding: 0;
+		margin: 0;
 	}
 }

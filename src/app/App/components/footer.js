@@ -66,6 +66,9 @@ function Footer() {
           </div>
         </div>
       </div>
+      <script src="/xmlui/themes/Mirage2/vendor/modernizr/modernizr.js"> </script>
+      <script src="/xmlui/themes/Mirage2/scripts/theme.js"> </script>
+      <script src="/xmlui/themes/Mirage2/scripts/bcentral.js"> </script>
     </div>
   );
 }

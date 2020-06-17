@@ -3,27 +3,23 @@ import React from "react";
 function SideBar() {
   return (
     <div>
+      <div className="seccion home only-mobile">
+        <div className="titulo">Menú Principal</div>
+        <ul className="listado">
+          <li><a href="https://repositoriodigital.bcentral.cl">Repositorio</a></li>
+          <li><a href="https://www.bcentral.cl/web/banco-central/inicio">Banco Central</a></li>
+          <li><a href="https://www.bcentral.cl/contacto">Contacto</a></li>
+        </ul>
+      </div>
       <div className="seccion home">
         <div className="titulo">Explorar</div>
         <ul className="listado">
-          <li>
-            <a href="/xmlui/community-list">Colecciones</a>
-          </li>
-          <li>
-            <a href="/xmlui/browse?type=author">Autores</a>
-          </li>
-          <li>
-            <a href="/xmlui/browse?type=dateissued">Fecha de publicación</a>
-          </li>
-          <li>
-            <a href="/xmlui/browse?type=subject">Temas</a>
-          </li>
-          <li>
-            <a href="/xmlui/browse?type=title">Títulos</a>
-          </li>
-          <li>
-            <a href="/xmlui/browse?type=typedoc">Tipos de Documento</a>
-          </li>
+          <li><a href="/xmlui/community-list">Colecciones</a></li>
+          <li><a href="/xmlui/browse?type=author">Autores</a></li>
+          <li><a href="/xmlui/browse?type=dateissued">Fecha de publicación</a></li>
+          <li><a href="/xmlui/browse?type=subject">Temas</a></li>
+          <li><a href="/xmlui/browse?type=title">Títulos</a></li>
+          <li><a href="/xmlui/browse?type=typedoc">Tipos de Documento</a></li>
         </ul>
       </div>
       {/* <div className="seccion home">

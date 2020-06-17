@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <div id="articulos">
-      <div className="articulo destacado">
+      <div className="articulo destacado only-desktop">
         <div className="imagen">
           <a href="/xmlui/handle/20.500.12580/4084">
             <div className="contenedor_imagen">
