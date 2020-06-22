@@ -1,6 +1,14 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 function SideBar() {
+  const { t } = useTranslation();
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang);
+  }
+
   return (
     <div>
       <div className="seccion home only-mobile">
@@ -12,7 +20,10 @@ function SideBar() {
         </ul>
       </div>
       <div className="seccion home">
-        <div className="titulo">Explorar</div>
+        <button onClick={() => handleClick("en")}>English</button>
+        <button onClick={() => handleClick("es")}>Español</button>
+
+        <div className="titulo">{t("titulo.1")}</div>
         <ul className="listado">
           <li><a href="/xmlui/community-list">Colecciones</a></li>
           <li><a href="/xmlui/browse?type=author">Autores</a></li>
